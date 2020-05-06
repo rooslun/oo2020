@@ -1,0 +1,1 @@
+Teha programm, milles on kasutusel klass. Klassil peaks olema 4-5 muutujat ja minimaalselt 3 käsklust. Tuua välja 4-5 eksemplaari ja näidata kuidas nad erinevalt töötavad.
