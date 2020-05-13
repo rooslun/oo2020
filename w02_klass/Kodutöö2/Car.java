@@ -1,18 +1,16 @@
 public class Car {
 
-    private String name;
+    //private String name;
     CarType carType;
     CarColorType carColorType;
 
     public Car(String name, CarType carType, CarColorType carColorType){
-        this.name = name;
+        //this.name = name;
         this.carType = carType;
         this.carColorType = carColorType;
     }
 
-    public String getName(){
-        return name;
-    }
+    
 
     public String getType(){
         if(carType == CarType.SPORT){
