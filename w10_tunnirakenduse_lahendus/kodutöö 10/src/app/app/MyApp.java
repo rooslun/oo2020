@@ -9,7 +9,7 @@ public class MyApp {
     private AppInfoThread infoThread;
 
     public MyApp() {
-        addThread = new AppAddThread("Add thread", aSystem);
+        addThread = new AppAddThread("Lisa thread", aSystem);
         infoThread = new AppInfoThread("Info thread", aSystem);
     }
 

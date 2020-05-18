@@ -6,8 +6,8 @@ import java.util.List;
 public class AppSystem {
 
     private boolean running; // vaatab kas meie app töötab
-    // teen ka listi kuhu hakata inimesi lisama
-    private List<String> people = new ArrayList<>();
+    // teen ka listi kuhu hakata puuvilju lisama
+    private List<String> fruits = new ArrayList<>();
 
     public AppSystem() {
         running = true;
@@ -26,8 +26,8 @@ public class AppSystem {
         running = false;
     }
 
-    public List<String> getPeople() {
-        return people;
+    public List<String> getFruits() {
+        return fruits;
     }
 
 }

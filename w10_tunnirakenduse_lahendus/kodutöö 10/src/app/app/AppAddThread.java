@@ -24,23 +24,23 @@ public void run() {
             try {
                 // meie programm töötab while loopiga
                 while(appSystem.isRunning()) {
-                    //kui süsteem runnib siis saab sisestada uue nime
+                    //kui süsteem runnib siis saab sisestada uue puuvilja
                     String newName;
-                    System.out.println("LISA uus inimene: ");
-                    //uusnimi = scanneriga ehk lisandub inimeste listi
+                    System.out.println("Lisa uus puuvili: ");
+                    //uusnimi = scanneriga ehk lisandub puuviljade listi
                     newName = in.nextLine();
-                    // kui sisestatud nimi on tühi ehk nime ei kirjutata, siis 
+                    // kui sisestatud nimi on tühi ehk vilja ei kirjutata, siis 
                     if(newName.equals("")) {
                         // siis süsteem läheb kinni, 
                         appSystem.end();
                         in.close();
                     } else {
-                        System.out.println("LISA Lisati inimene nimega: " + newName);
-                        // kui pole tühi siis võtan getpeople, siis on jubaligipääs listile. Lisan uue nime sinna
-                        appSystem.getPeople().add(newName);
+                        System.out.println("Lisati uus puuvili: " + newName);
+                        // kui pole tühi siis võtan getfruits, siis on jubaligipääs listile. Lisan uue vilja sinna
+                        appSystem.getFruits().add(newName);
                     }
 
-                    // thread sleep, iga kord kui loop on läbitud küsib 1sekundi pärast uuesti
+                    // thread sleep, iga kord kui loop on läbitud küsib 2sekundi pärast uuesti
                     Thread.sleep(2000);
                 }
                 
@@ -54,7 +54,7 @@ public void run() {
 
         //teen threadi algus funktsioon
         public void start() {
-            System.out.println("ADD: Thread " + tName + " starting");
+            System.out.println("ADD: Thread " + tName + " Algab");
             //kontrollin kas thread mille siin olen ära määranud on võrdne nulliga
             if(thread == null) {
                 thread = new Thread(this, tName);

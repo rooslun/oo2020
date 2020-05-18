@@ -1,5 +1,5 @@
 package app.app;
-// Siin arvutan hetkel olemas olevate inimeste arvu 
+// Siin arvutan hetkel olemas olevate puuviljade arvu
 
 
 
@@ -8,7 +8,7 @@ public class AppInfoThread implements Runnable {
     private String tName;
     private Thread thread;
 
-    // kuna tahan kontrollida kas inimeste arv on üldse muutunud kui hetke arvu välja prindin
+    // kuna tahan kontrollida kas puuviljade arv on üldse muutunud kui hetke arvu välja prindin
     // pean lisama selleks veel ühe muutuja
     private int arv;
 
@@ -27,11 +27,11 @@ public class AppInfoThread implements Runnable {
         try {
             while(aSystem.isRunning()){
                 // vaatan kas arv on üldse muutunud
-                if (aSystem.getPeople().size() > arv) {
+                if (aSystem.getFruits().size() > arv) {
                 // prindin inimeste arvu välja
-                System.out.println("INFO : Hetkel olemas olevate inimeste arv : " + aSystem.getPeople().size());
+                System.out.println("INFO : Hetkel olemas olevate puuviljade arv : " + aSystem.getFruits().size());
                 // annan arvumuutujale uue väärtuse
-                arv = aSystem.getPeople().size();
+                arv = aSystem.getFruits().size();
                 }
                 Thread.sleep(5000);
             
